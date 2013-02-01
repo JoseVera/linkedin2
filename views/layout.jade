@@ -1,0 +1,28 @@
+doctype 5
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/bootstrap.css')
+    link(rel='stylesheet', href='/stylesheets/stickyFooter.css')
+    script(type='text/javascript', src='http://code.jquery.com/jquery-latest.js')
+    script(type='text/javascript', src='/javascripts/bootstrap.min.js')
+    
+  body
+    .navbar.navbar-inverse.navbar-fixed-top
+        .navbar-inner
+            .container
+                a.brand(href="#") JVera
+
+    #wrap                
+         .container(style="padding-top:40px;")     
+            block content
+         #push
+    #footer
+        .container
+            p.muted.credit
+            a(href="http://www.linkedin.com/in/josealejandrovera/en") &copy; Jose Vera        
+   
+
+    
+
+  
